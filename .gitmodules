@@ -1,0 +1,3 @@
+[submodule "maginet"]
+	path = maginet
+	url = https://github.com/evrimoztamur/maginet/
