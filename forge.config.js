@@ -1,5 +1,7 @@
 module.exports = {
-  packagerConfig: {},
+  packagerConfig: {
+    icon: './src/static/png/favicon'
+  },
   rebuildConfig: {},
   makers: [
     {
