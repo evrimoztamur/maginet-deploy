@@ -93,3 +93,7 @@ out/
 
 # Packaged results
 maginet-*
+
+# Deployment contents
+src/static
+src/index.html
