@@ -11,6 +11,7 @@ function createWindow() {
     minHeight: 584,
     center: true,
     title: 'Maginet',
+    show: false,
     icon: path.join(__dirname, 'static/png/appicon.ico'),
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
@@ -21,6 +22,10 @@ function createWindow() {
 
   mainWindow.loadFile(path.join(__dirname, 'index.html'));
   // mainWindow.webContents.openDevTools({ mode: "detach" });
+
+  mainWindow.once('ready-to-show', () => {
+    mainWindow.show()
+  });
 
   globalShortcut.unregisterAll();
 }
