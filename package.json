@@ -1,32 +1,16 @@
 {
   "name": "maginet-deploy",
-  "productName": "maginet-deploy",
   "version": "1.0.0",
-  "description": "My Electron application description",
-  "main": "src/index.js",
+  "description": "Electron application to deploy Maginet on Steam",
+  "main": "main.js",
   "scripts": {
-    "start": "electron-forge start",
-    "package": "electron-forge package",
-    "make": "electron-forge make",
-    "publish": "electron-forge publish",
-    "lint": "echo \"No linting configured\""
+    "start": "electron .",
+    "build": "npx electron-packager . --ignore=\"^/maginet$\" --ignore=\"^/node_modules$\" --overwrite"
   },
-  "keywords": [],
-  "author": {
-    "name": "Evrim Öztamur",
-    "email": "evrimoztamur@gmail.com"
-  },
-  "license": "MIT",
-  "dependencies": {
-    "electron-squirrel-startup": "^1.0.0"
-  },
+  "repository": "https://github.com/evrimoztamur/maginet-deploy",
+  "author": "evrim.zone",
   "devDependencies": {
-    "@electron-forge/cli": "^6.1.0",
-    "@electron-forge/maker-deb": "^6.1.0",
-    "@electron-forge/maker-rpm": "^6.1.0",
-    "@electron-forge/maker-squirrel": "^6.1.0",
-    "@electron-forge/maker-zip": "^6.1.0",
-    "electron": "23.2.1",
+    "electron": "^25.3.1",
     "electron-packager": "^17.1.1"
   }
 }
