@@ -9,9 +9,9 @@ const createWindow = () => {
   const mainWindow = new BrowserWindow({
     useContentSize: true,
     autoHideMenuBar: true,
-    width: 800,
+    width: 864,
     height: 584,
-    minWidth: 800,
+    minWidth: 864,
     minHeight: 584,
     center: true,
     title: 'Maginet',
@@ -24,7 +24,7 @@ const createWindow = () => {
   mainWindow.setMenu(null);
 
   mainWindow.loadFile(path.join(__dirname, 'index.html'));
-  mainWindow.webContents.openDevTools();
+  // mainWindow.webContents.openDevTools();
 
   globalShortcut.unregisterAll();
 };
