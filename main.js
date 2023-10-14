@@ -21,7 +21,7 @@ function createWindow() {
   mainWindow.setMenu(null);
 
   mainWindow.loadFile(path.join(__dirname, 'index.html'));
-  mainWindow.webContents.openDevTools({ mode: "detach" });
+  // mainWindow.webContents.openDevTools({ mode: "detach" });
 
   mainWindow.once('ready-to-show', () => {
     mainWindow.show()
@@ -39,5 +39,5 @@ app.whenReady().then(() => {
 })
 
 app.on('window-all-closed', function () {
-  if (process.platform !== 'darwin') app.quit()
+  app.quit()
 })

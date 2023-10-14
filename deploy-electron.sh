@@ -7,4 +7,4 @@ cd -
 cp "maginet/html/itch.html" "index.html"
 cp -r "maginet/static" "."
 
-# npm run build
+npm run build
