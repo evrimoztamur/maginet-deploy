@@ -21,7 +21,7 @@ function createWindow() {
   mainWindow.setMenu(null);
 
   mainWindow.loadFile(path.join(__dirname, 'index.html'));
-  // mainWindow.webContents.openDevTools({ mode: "detach" });
+  mainWindow.webContents.openDevTools({ mode: "detach" });
 
   mainWindow.once('ready-to-show', () => {
     mainWindow.show()
