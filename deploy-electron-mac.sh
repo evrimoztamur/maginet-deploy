@@ -5,7 +5,7 @@ wasm-pack build --target web --out-dir static/js/pkg --out-name maginet_aee75fc 
 
 cd -
 cp "maginet/html/itch.html" "src/index.html"
-cp -r "maginet/static" "src/static"
+cp -rf "maginet/static" "src"
 
 npm run build-mac
 
@@ -14,6 +14,6 @@ wasm-pack build --target web --out-dir static/js/pkg --out-name maginet_aee75fc 
 
 cd -
 cp "maginet/html/itch.html" "src/index.html"
-cp -r "maginet/static" "src/static"
+cp -rf "maginet/static" "src"
 
 npm run build-mac-demo

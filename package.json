@@ -5,10 +5,10 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "build-windows": "npx electron-packager src --ignore=\"^/maginet$\" --ignore=\"^/node_modules$\" --overwrite --out=\"maginet-windows\" --platform=win32 --arch=x64 --icon=\"src/static/png/appicon.ico\"",
-    "build-windows-demo": "npx electron-packager src --ignore=\"^/maginet$\" --ignore=\"^/node_modules$\" --overwrite --out=\"maginet-windows-demo\" --platform=win32 --arch=x64 --icon=\"src/static/png/appicon.ico\"",
-    "build-mac": "npx electron-packager src --ignore=\"^/maginet$\" --ignore=\"^/node_modules$\" --overwrite --out=\"maginet-mac\" --platform=darwin --arch=x64 --icon=\"src/static/png/appicon.png\"",
-    "build-mac-demo": "npx electron-packager src --ignore=\"^/maginet$\" --ignore=\"^/node_modules$\" --overwrite --out=\"maginet-mac-demo\" --platform=darwin --arch=x64 --icon=\"src/static/png/appicon.png\""
+    "build-windows": "npx electron-packager src \"Maginet\" --ignore=\"^/maginet$\" --ignore=\"^/node_modules$\" --overwrite --out=\"maginet-windows\" --platform=win32 --arch=x64 --icon=\"src/static/png/appicon\"",
+    "build-windows-demo": "npx electron-packager src \"Maginet Demo\" --ignore=\"^/maginet$\" --ignore=\"^/node_modules$\" --overwrite --out=\"maginet-windows\" --platform=win32 --arch=x64 --icon=\"src/static/png/appicon\"",
+    "build-mac": "npx electron-packager src \"Maginet\" --ignore=\"^/maginet$\" --ignore=\"^/node_modules$\" --overwrite --out=\"maginet-mac\" --platform=darwin --arch=x64 --icon=\"src/static/png/appicon\"",
+    "build-mac-demo": "npx electron-packager src \"Maginet Demo\" --ignore=\"^/maginet$\" --ignore=\"^/node_modules$\" --overwrite --out=\"maginet-mac\" --platform=darwin --arch=x64 --icon=\"src/static/png/appicon\""
   },
   "repository": "https://github.com/evrimoztamur/maginet-deploy",
   "author": "evrim.zone",
