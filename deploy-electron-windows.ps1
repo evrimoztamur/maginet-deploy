@@ -1,19 +1,17 @@
-#!/usr/bin/env sh
-
 cd "maginet"
 wasm-pack build --target web --out-dir static/js/pkg --out-name maginet_aee75fc -- --features "deploy"
 
-cd -
+cd ..
 cp "maginet/html/itch.html" "src/index.html"
-cp -r "maginet/static" "src/static"
+cp -Recurse -Force "maginet/static" "src"
 
-npm run build-mac
+npm run build-windows
 
 cd "maginet"
 wasm-pack build --target web --out-dir static/js/pkg --out-name maginet_aee75fc -- --features "deploy demo"
 
-cd -
+cd ..
 cp "maginet/html/itch.html" "src/index.html"
-cp -r "maginet/static" "src/static"
+cp -Recurse -Force "maginet/static" "src"
 
-npm run build-mac-demo
+npm run build-windows-demo
